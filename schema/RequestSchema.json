@@ -1,0 +1,14 @@
+{
+    "title": "Request Schema",
+    "description": "A framework for the format of the request json data",
+    "type": "object",
+    "definitions": {
+        "Entity": {"$ref": "file:RequestSchema.json" }
+    },
+    "properties": {
+        "venv": {"type": "string"},
+        "module_absolute_path": {"type": "string"},
+        "function": {"type": "string"},
+        "parameters": {"type": "array"}
+    }
+}
